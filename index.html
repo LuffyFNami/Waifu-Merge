@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#171329">
+  <title>Waifu Merge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">♡</div>
+        <div><div class="eyebrow">THE LITTLE MERGE GAME</div><h1>Waifu <span>Merge</span></h1></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>SCORE</span><strong id="score">0</strong></div>
+        <div class="stat"><span>BEST</span><strong id="best">0</strong></div>
+      </div>
+    </header>
+
+    <section class="game-layout">
+      <aside class="side-panel">
+        <div class="panel-card next-card">
+          <div class="panel-label">UP NEXT</div>
+          <canvas id="nextPreview" width="110" height="110"></canvas>
+          <div id="nextName" class="next-name">Tier 1</div>
+        </div>
+        <div class="panel-card instructions">
+          <div class="panel-label">HOW TO PLAY</div>
+          <p>Drop matching characters together to merge them into a higher tier.</p>
+          <div class="key-row"><kbd>←</kbd><kbd>→</kbd><span>Move drop point</span></div>
+          <div class="key-row"><kbd>SPACE</kbd><span>Drop character</span></div>
+          <div class="key-row"><kbd>R</kbd><span>Restart</span></div>
+        </div>
+        <div class="panel-card collection">
+          <div class="panel-label">MERGE LADDER</div>
+          <div id="ladder" class="ladder"></div>
+        </div>
+      </aside>
+
+      <section class="board-wrap">
+        <div class="board-heading">
+          <div><span class="live-dot"></span> <span id="status">READY TO DROP</span></div>
+          <button id="soundBtn" class="icon-button" aria-label="Toggle sound">♪ <span>ON</span></button>
+        </div>
+        <div class="canvas-frame">
+          <canvas id="game" width="540" height="720" aria-label="Waifu Merge game board"></canvas>
+          <div id="overlay" class="overlay hidden">
+            <div class="overlay-card">
+              <div class="overlay-sparkle">✦</div>
+              <h2 id="overlayTitle">Game over!</h2>
+              <p id="overlayText">Your score: 0</p>
+              <button id="restartBtn" class="primary-button">Play again</button>
+            </div>
+          </div>
+        </div>
+        <div class="board-footer"><span>DRAG OR MOVE TO AIM · CLICK TO DROP</span><span id="dropHint">ONE DROP AT A TIME</span></div>
+      </section>
+    </section>
+    <footer>Made for one more merge. <span>♡</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
