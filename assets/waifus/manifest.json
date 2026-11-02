@@ -1,0 +1,44 @@
+{
+  "name": "Waifu Merge",
+  "description": "Drop and merge anime character portraits.",
+  "sprite_directory": "assets/waifus",
+  "sprite_pattern": "tier-{n}.png",
+  "tiers": [
+    {
+      "tier": 0,
+      "name": "Kohai"
+    },
+    {
+      "tier": 1,
+      "name": "Cute"
+    },
+    {
+      "tier": 2,
+      "name": "Sweet"
+    },
+    {
+      "tier": 3,
+      "name": "Lovely"
+    },
+    {
+      "tier": 4,
+      "name": "Doki"
+    },
+    {
+      "tier": 5,
+      "name": "Dreamy"
+    },
+    {
+      "tier": 6,
+      "name": "Princess"
+    },
+    {
+      "tier": 7,
+      "name": "Queen"
+    },
+    {
+      "tier": 8,
+      "name": "Legend"
+    }
+  ]
+}
